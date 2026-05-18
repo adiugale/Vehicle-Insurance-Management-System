@@ -42,11 +42,10 @@ CREATE TABLE `category_list` (
 --
 
 INSERT INTO `category_list` (`id`, `name`, `description`, `status`, `delete_flag`, `date_created`, `date_updated`) VALUES
-(1, 'Commercial', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra leo eu lorem consectetur interdum. Aliquam auctor dignissim nisi sed gravida. Nunc nisi risus, tincidunt sed malesuada in, euismod in magna. Ut vel orci porttitor, dapibus purus sed, euismod urna. Nulla faucibus venenatis lacus luctus condimentum.', 1, 0, '2022-02-03 08:52:50', '2022-02-03 08:53:09'),
-(2, '2 wheeler', 'Integer auctor at mauris a dapibus. Donec id posuere tortor, id vehicula urna. Phasellus libero orci, tristique vitae condimentum a, suscipit non justo. Sed ipsum nisl, pellentesque a nisl luctus, finibus porta orci. Nulla ac vestibulum augue. Etiam placerat lorem eget magna condimentum dignissim.', 1, 0, '2022-02-03 08:53:32', NULL),
-(3, '3 Wheeler', 'Sed at leo vel felis pellentesque scelerisque. Nunc ut lobortis mi, non pharetra massa. Praesent in nulla at sem molestie rhoncus lobortis id mi. Nunc erat sapien, pretium a venenatis id, cursus in risus. Sed condimentum felis eget nulla fringilla, eget bibendum ex malesuada. Mauris cursus euismod pellentesque. In tincidunt odio at lacus convallis fringilla.', 1, 0, '2022-02-03 08:54:52', NULL),
-(4, '4 Wheeler', 'Quisque at erat at ipsum mollis viverra. Quisque in ex tempor, pulvinar odio at, iaculis nisl. Duis in tellus varius, semper neque quis, pellentesque dui. Morbi orci odio, gravida non risus nec, tristique suscipit magna. Donec cursus, elit et placerat rutrum, justo sapien pulvinar velit, sit amet vulputate felis risus sed magna. Vestibulum elementum ipsum felis, eget posuere lorem viverra nec. Ut at auctor odio.', 1, 0, '2022-02-03 08:56:25', NULL);
-
+(1, 'Commercial', 'This category is for commercial vehicles. It includes vehicles used for business purposes such as transporting goods or passengers. These vehicles are managed under commercial insurance policies.', 1, 0, '2022-02-03 08:52:50', '2022-02-03 08:53:09'),
+(2, '2 wheeler', 'This category includes two-wheeler vehicles such as bikes and scooters. The insurance policy provides protection against accidents, theft, and damages.', 1, 0, '2022-02-03 08:53:32', NULL),
+(3, '3 Wheeler', 'This category is for three-wheeler vehicles such as auto-rickshaws and cargo rickshaws. It covers vehicle safety, maintenance, and insurance-related services.', 1, 0, '2022-02-03 08:54:52', NULL),
+(4, '4 Wheeler', 'This category includes four-wheeler vehicles such as cars, jeeps, and vans. Insurance coverage helps protect the vehicle from accidents, natural disasters, and other damages.', 1, 0, '2022-02-03 08:56:25', NULL);
 -- --------------------------------------------------------
 
 --
@@ -138,10 +137,12 @@ CREATE TABLE `policy_list` (
 --
 
 INSERT INTO `policy_list` (`id`, `category_id`, `code`, `name`, `description`, `duration`, `cost`, `doc_path`, `status`, `delete_flag`, `date_created`, `date_updated`) VALUES
-(1, 2, '123456789', 'Policy101', 'Sed eget egestas dolor, id mattis ante. Duis non dui at arcu interdum viverra ut vitae est. Nam vulputate posuere gravida. Ut dapibus nulla sed augue semper luctus. Pellentesque ornare, metus et hendrerit euismod, dolor felis laoreet ipsum, sed rutrum massa nunc sit amet neque. Suspendisse bibendum suscipit est a dapibus.', 1, 1500, 'uploads/policies/1.pdf?v=1643853360', 1, 0, '2022-02-03 09:34:32', '2022-02-03 09:56:00'),
-(2, 4, '23061415', 'Policy102', 'In bibendum lacus eget purus luctus varius. Integer ultricies libero ac purus vulputate sagittis. Cras ultricies ipsum eget aliquam vestibulum. Pellentesque viverra ligula quis turpis suscipit semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque dui risus, mollis a nunc sed, semper congue lectus.', 3, 4999.99, 'uploads/policies/2.pdf?v=1643853724', 1, 0, '2022-02-03 10:02:04', '2022-02-03 10:02:04'),
-(3, 1, '987654321', 'Commercial Policy1001', 'Integer scelerisque sapien non molestie gravida. Vestibulum cursus bibendum augue, eget dignissim urna sagittis ut. Nulla sed ante mauris. Nam eget mauris felis. Maecenas ac magna in libero sodales sagittis eu et diam. Fusce lobortis quam sit amet lorem molestie, sit amet suscipit diam lacinia. Duis a mollis odio.', 1, 4000, 'uploads/policies/3.pdf?v=1643853870', 1, 0, '2022-02-03 10:04:30', '2022-02-03 10:04:30');
 
+(1, 2, '123456789', 'Policy101', 'This insurance policy is designed for two-wheeler vehicles. It provides financial protection against accidents, theft, and vehicle damages. The policy also includes basic coverage benefits for the vehicle owner.', 1, 1500, 'uploads/policies/1.pdf?v=1643853360', 1, 0, '2022-02-03 09:34:32', '2022-02-03 09:56:00'),
+
+(2, 4, '23061415', 'Policy102', 'This policy is created for four-wheeler vehicles such as cars and vans. It offers protection against road accidents, natural disasters, and third-party liabilities. The policy ensures safer and secure vehicle coverage.', 3, 4999.99, 'uploads/policies/2.pdf?v=1643853724', 1, 0, '2022-02-03 10:02:04', '2022-02-03 10:02:04'),
+
+(3, 1, '987654321', 'Commercial Policy1001', 'This commercial vehicle insurance policy is intended for business vehicles used for transportation and delivery purposes. It provides coverage for damages, accidents, and other unexpected incidents during commercial operations.', 1, 4000, 'uploads/policies/3.pdf?v=1643853870', 1, 0, '2022-02-03 10:04:30', '2022-02-03 10:04:30');
 -- --------------------------------------------------------
 
 --
